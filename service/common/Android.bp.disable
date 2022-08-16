@@ -21,7 +21,7 @@ cc_library_static {
         "bluetooth/util/atomic_string.cc",
     ],
     export_include_dirs: ["./"],
-    include_dirs: ["system/bt"],
+    include_dirs: ["packages/modules/Bluetooth/system"],
     shared_libs: [
         "libbase",
     ],
@@ -64,7 +64,7 @@ cc_library_static {
         export_aidl_headers: true,
         include_dirs: [
             "frameworks/native/aidl/binder",
-            "system/bt/service/common",
+            "packages/modules/Bluetooth/system/service/common",
         ],
     },
     export_include_dirs: ["./"],

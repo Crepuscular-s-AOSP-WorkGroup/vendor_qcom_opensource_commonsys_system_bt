@@ -4,7 +4,7 @@ cc_test {
     name: "net_test_bluetooth",
     test_suites: ["device-tests"],
     defaults: ["fluoride_defaults"],
-    include_dirs: ["system/bt"],
+    include_dirs: ["packages/modules/Bluetooth/system"],
     srcs: [
         "adapter/adapter_unittest.cc",
         "adapter/bluetooth_test.cc",
@@ -32,7 +32,7 @@ cc_test {
 cc_test {
     name: "net_test_rfcomm",
     defaults: ["fluoride_defaults"],
-    include_dirs: ["system/bt"],
+    include_dirs: ["packages/modules/Bluetooth/system"],
     srcs: [
         "adapter/bluetooth_test.cc",
         "rfcomm/rfcomm_test.cc",

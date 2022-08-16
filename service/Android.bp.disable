@@ -6,7 +6,7 @@ cc_defaults {
     name: "fluoride_service_defaults_qti",
     defaults: ["fluoride_defaults"],
     include_dirs: [
-        "system/bt",
+        "packages/modules/Bluetooth/system",
     ],
     header_libs: [ "libbluetooth_headers" ],
 }
@@ -100,7 +100,7 @@ cc_test {
     ],
     aidl: {
         include_dirs: [
-            "system/bt/service/common",
+            "packages/modules/Bluetooth/system/service/common",
             "frameworks/native/aidl/binder",
         ],
     },
@@ -184,7 +184,7 @@ cc_binary {
 cc_library_static {
     name: "libbluetoothtbd_hal_qti",
     defaults: ["fluoride_defaults"],
-    include_dirs: ["system/bt"],
+    include_dirs: ["packages/modules/Bluetooth/system"],
     header_libs: ["libbluetooth_headers"],
     srcs: [
         "hal/bluetooth_gatt_interface.cc",
